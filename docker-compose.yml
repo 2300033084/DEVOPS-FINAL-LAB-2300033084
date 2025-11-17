@@ -19,6 +19,7 @@ services:
       start_period: 30s
 
   backend:
+    image: yashodhanreddy/2300033084-final-backend
     container_name: 2300033084-end-springboot
     build:
       context: ./springbootproject
@@ -32,7 +33,7 @@ services:
       - springboot-mysql-net
 
   frontend:
-   
+    image: yashodhanreddy/2300033084-final-frontend
     container_name: 2300033084-end-reactapp
     build:
       context: ./reactapp
